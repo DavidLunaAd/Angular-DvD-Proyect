@@ -1,8 +1,8 @@
 <body>
   <h2 class="title">AboutMe Component</h2>
-  <ul class="ejercicios">
+  <ul class="opciones">
     <li *ngFor="let opcion of opciones"(click)="onSelectedOpcion(opcion)" [class.selected]="opcion===opcionSeleccionada">
-      <span class="ejercicio">{{opcion.id}}</span> {{opcion.name}}
+      <span class="opcion">{{opcion.id}}</span> {{opcion.name}}
     </li>
   </ul>
   <div class="modificador">

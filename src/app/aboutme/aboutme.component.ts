@@ -13,14 +13,18 @@ export class AboutmeComponent implements OnInit {
   opciones!: Opcion[];
   opcionSeleccionada!:Opcion;
 
-  constructor(private optionsService:OptionsService) { }
+  constructor(private optionsService:OptionsService) {
+    console.log("---Componente Aboutme creado ---");
+  }
 
+  // Metodo asincrono
   getOpciones():void{
     this.optionsService.getOpcion().subscribe(opciones=>this.opciones=opciones);
 
   }
 
   ngOnInit(): void {
+    console.log(" ---Componente Aboutme[ngOnInit] ---");
     this.getOpciones();
   }
 

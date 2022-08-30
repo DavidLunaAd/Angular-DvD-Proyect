@@ -6,7 +6,7 @@ import { InicioComponent } from './inicio/inicio.component';
 
 
 const routes: Routes = [
-  {path: 'aboute', component:AboutmeComponent},
+  {path: 'aboutme', component:AboutmeComponent},
   {path: 'inicio', component:InicioComponent},
   {path: 'info', component:InfoComponent},
   {path:'', redirectTo:'/inicio',pathMatch:'full'}
