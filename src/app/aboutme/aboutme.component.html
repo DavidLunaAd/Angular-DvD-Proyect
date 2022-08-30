@@ -1,0 +1,15 @@
+<body>
+  <h2 class="title">AboutMe component</h2>
+  <ul class="ejercicios">
+    <li *ngFor="let opcion of opciones"(click)="onSelectedOpcion(opcion)" [class.selected]="opcion===opcionSeleccionada">
+      <span class="ejercicio">{{opcion.id}}</span> {{opcion.name}}
+    </li>
+  </ul>
+  <div class="modificador">
+    <label>Modify: </label>
+    <input [(ngModel)]="opcionSeleccionada.name" placeholder="Nombre">
+  </div>
+  <div class="detalle">
+    <app-detalle [opcion]="opcionSeleccionada"></app-detalle>
+  </div>
+</body>
