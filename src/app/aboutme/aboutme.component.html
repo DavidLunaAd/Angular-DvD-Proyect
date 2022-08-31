@@ -1,12 +1,14 @@
 <body>
-  <h2 class="title">AboutMe Component</h2>
+  <h2 class="title">Seis puntos sobre mi</h2>
   <ul class="opciones">
     <li *ngFor="let opcion of opciones"(click)="onSelectedOpcion(opcion)" [class.selected]="opcion===opcionSeleccionada">
       <span class="opcion">{{opcion.id}}</span> {{opcion.name}}
     </li>
   </ul>
-  <div class="modificador">
-    <label>Modify: </label>
+  <div *ngIf="opcionSeleccionada">
+    <div class="modificador"><label>
+      Modify: </label>
+    </div>
     <input [(ngModel)]="opcionSeleccionada.name" placeholder="Nombre">
   </div>
   <div class="detalle">

@@ -7,10 +7,15 @@ body{
   background-image: linear-gradient(to top right, aqua, yellow);
 }
 .title{
-grid-column: 1/3;
-text-align: center;
+  grid-column: 2;
+  color:#7a9922;
+  margin: 8% 15%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: underline;
 }
 .opciones {
+  font-family: Georgia, 'Times New Roman', Times, serif;
   grid-column: 1;
   margin: 0 0 2em 0;
   list-style-type: none;
